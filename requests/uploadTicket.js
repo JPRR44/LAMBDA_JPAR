@@ -8,7 +8,7 @@ exports.handler = async (event) => {
         throw Error('No ID on the data');
     }
     const params = {
-        tableName,
+        TableName: tableName,
         Item: event.ticket,
     };
     const res = await documentClient.put(params).promise();
