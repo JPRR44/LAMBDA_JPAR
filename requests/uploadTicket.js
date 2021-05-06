@@ -1,6 +1,6 @@
 const AWS = require('aws-sdk');
 const documentClient = new AWS.DynamoDB.DocumentClient();
-const tableName = 'Tickets'
+const tableName = 'JPAR'
 
 exports.handler = async (event) => {
     // TODO implement
