@@ -8,12 +8,12 @@ exports.handler = async (event) => {
         throw Error('No ID on the data');
     }
     const params = {
-        TableName,
+        tableName,
         Item: event.ticket,
     };
     const res = await documentClient.put(params).promise();
 
     if (!res) {
-        throw Error(`There was an error inserting ID of ${event.ticket.id} in table ${TableName}`)
+        throw Error(`There was an error inserting ID of ${event.ticket.id} in table ${tableName}`)
     }
 };
