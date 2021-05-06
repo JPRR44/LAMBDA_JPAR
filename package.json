@@ -1,0 +1,19 @@
+{
+  "name": "lambda_jpar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JPRR44/LAMBDA_JPAR.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JPRR44/LAMBDA_JPAR/issues"
+  },
+  "homepage": "https://github.com/JPRR44/LAMBDA_JPAR#readme"
+}
