@@ -9,7 +9,7 @@ exports.handler = async (event,context,callback) => {
     const data = await documentClient.scan(params).promise();
 
     if(!data){
-        throw Error(`There was an error fetching the data from ${TableName}`);
+        throw Error(`There was an error fetching the data from ${tableName}`);
     }
-    return data
+    return data.Items
 };
