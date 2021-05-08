@@ -11,8 +11,7 @@ exports.handler = async (event, context, callback) => {
             TableName: tableName,
             Item: event.ticket,
             Key: {
-                "id": event.ticket.id, //primary key and primary key value
-                "summary": event.ticket.summary
+                "id": event.ticket.id //primary key and primary key value
             },
             UpdateExpression: "set assignedDev2 = :n",
             ExpressionAttributeValues: {
@@ -33,8 +32,7 @@ exports.handler = async (event, context, callback) => {
             TableName: tableName,
             Item: event.ticket,
             Key: {
-                "id": event.ticket.id, //primary key and primary key value
-                "summary": event.ticket.summary
+                "id": event.ticket.id //primary key and primary key value
             },
             UpdateExpression: "set assignedDev3 = :n",
             ExpressionAttributeValues: {
@@ -55,8 +53,7 @@ exports.handler = async (event, context, callback) => {
             TableName: tableName,
             Item: event.ticket,
             Key: {
-                "id": event.ticket.id, //primary key and primary key value
-                "summary": event.ticket.summary
+                "id": event.ticket.id //primary key and primary key value
             },
             UpdateExpression: "set attachedFiles = :n",
             ExpressionAttributeValues: {
@@ -77,8 +74,7 @@ exports.handler = async (event, context, callback) => {
             TableName: tableName,
             Item: event.ticket,
             Key: {
-                "id": event.ticket.id, //primary key and primary key value
-                "summary": event.ticket.summary
+                "id": event.ticket.id //primary key and primary key value
             },
             UpdateExpression: "set description = :n",
             ExpressionAttributeValues: {
@@ -99,8 +95,7 @@ exports.handler = async (event, context, callback) => {
             TableName: tableName,
             Item: event.ticket,
             Key: {
-                "id": event.ticket.id, //primary key and primary key value
-                "summary": event.ticket.summary
+                "id": event.ticket.id //primary key and primary key value
             },
             UpdateExpression: "set email = :n",
             ExpressionAttributeValues: {
